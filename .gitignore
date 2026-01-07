@@ -1,2 +1,5 @@
-.ipynb_checkpoints
-.DS_Store
+**/.ipynb_checkpoints
+**/.DS_Store
+_build/
+venv/
+textbook/

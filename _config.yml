@@ -14,7 +14,14 @@ execute:
   execute_notebooks: force
 
 # Don't run these files.
-exclude_patterns: ["LICENSE.md"]
+exclude_patterns: 
+  - "LICENSE.md"
+  - "venv/*"
+  - ".env/*"
+  - "_build/*"
+  - "Thumbs.db"
+  - ".DS_Store"
+  - "**.ipynb_checkpoints"
 
 # Favicon
 html:
