@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -445,6 +445,10 @@ document.write(`
 </div>
 <section id="simplifying-the-calculation">
 <span id="ch6-2"></span><h1><span class="section-number">6.2. </span>Simplifying the Calculation<a class="headerlink" href="#simplifying-the-calculation" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>To calculate the variance, we have had to find each deviation, square it, and then find the weighted average of of the squares. It’s worth seeing if we can reduce this work.</p>
 <section id="linear-transformations">
 <h2><span class="section-number">6.2.1. </span>Linear Transformations<a class="headerlink" href="#linear-transformations" title="Link to this heading">#</a></h2>
@@ -458,13 +462,13 @@ SD(X+b) ~ = ~ SD(X) ~~~~~ \text{ for all } b
 <p>Of course you can prove this by algebra, but it’s clear from imagining the probability histograms or visualizing them as in the figure below. In the figure, <span class="math notranslate nohighlight">\(b = 6\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/17bb7e86298c89808216489e157eba630f3338c136eabf198bb47d33c83a5968.png" src="../../_images/17bb7e86298c89808216489e157eba630f3338c136eabf198bb47d33c83a5968.png" />
+<img alt="../../_images/ed88256c0ec8cab2e245dea61c28871530d8dedfbc7a77830a8bb54af629a845.png" src="../../_images/ed88256c0ec8cab2e245dea61c28871530d8dedfbc7a77830a8bb54af629a845.png" />
 </div>
 </div>
 <p>Now let <span class="math notranslate nohighlight">\(Y = aX\)</span> for a positive constant <span class="math notranslate nohighlight">\(a\)</span>. Here are the probability histograms of <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y = 3X\)</span> for <span class="math notranslate nohighlight">\(X\)</span> as in the example above.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/753616c7ef42ba60f674b8f3b5d4277e6fe0681e78361cb8ebf1a8bf6decec81.png" src="../../_images/753616c7ef42ba60f674b8f3b5d4277e6fe0681e78361cb8ebf1a8bf6decec81.png" />
+<img alt="../../_images/9197c626509240e726e7c6e99013ad0c0f9a936f5d27ea9e36fd4b9d3a11ef2a.png" src="../../_images/9197c626509240e726e7c6e99013ad0c0f9a936f5d27ea9e36fd4b9d3a11ef2a.png" />
 </div>
 </div>
 <p>Bars that were separated by one horizontal unit in the histogram of <span class="math notranslate nohighlight">\(X\)</span> are separated by 3 horizontal units in the histogram of <span class="math notranslate nohighlight">\(Y\)</span>. So the SD of <span class="math notranslate nohighlight">\(Y\)</span> is 3 times the SD of <span class="math notranslate nohighlight">\(X\)</span>. In general,</p>
@@ -475,7 +479,7 @@ SD(aX) ~ = ~ aSD(X) ~~~~ \text{ for } a &gt; 0
 <p>If <span class="math notranslate nohighlight">\(a &lt; 0\)</span> then we have to be a little more careful. The figure below show the probability histograms of <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y = -3X\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/bcb9ddd4ac19ad53df91eec4fda179243aa97bb4e821829f7e6c14895d1d3841.png" src="../../_images/bcb9ddd4ac19ad53df91eec4fda179243aa97bb4e821829f7e6c14895d1d3841.png" />
+<img alt="../../_images/397b76b120cbfc06d28b3f5c1c4730eb2e4b5b28c1725a1ebaa2d91d2be4eeac.png" src="../../_images/397b76b120cbfc06d28b3f5c1c4730eb2e4b5b28c1725a1ebaa2d91d2be4eeac.png" />
 </div>
 </div>
 <p>The figure reminds us that if <span class="math notranslate nohighlight">\(a &lt; 0\)</span> then multiplication by <span class="math notranslate nohighlight">\(a\)</span> has two stages: first a multiplication by <span class="math notranslate nohighlight">\(\vert a \vert\)</span> which affects the SD, and then a multiplication by <span class="math notranslate nohighlight">\(-1\)</span> which flips the histogram about the vertical axis and doesn’t affect the SD.</p>

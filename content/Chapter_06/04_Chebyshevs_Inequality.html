@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -446,13 +446,17 @@ document.write(`
 </div>
 <section id="chebyshev-s-inequality">
 <h1><span class="section-number">6.4. </span>Chebyshev’s Inequality<a class="headerlink" href="#chebyshev-s-inequality" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>Markov’s inequality gives us upper bounds on the tail probabilities of a non-negative random variable, based only on the expectation. It seems reasonable to think we might be able to do better if we also used the SD of the distribution.</p>
 <p>Let <span class="math notranslate nohighlight">\(X\)</span> be any random variable (not necessarily non-negative) and let <span class="math notranslate nohighlight">\(c\)</span> be any positive number. What can we say about the chance that <span class="math notranslate nohighlight">\(X\)</span> is at least <span class="math notranslate nohighlight">\(c\)</span> units away from its mean?</p>
 <p>Let <span class="math notranslate nohighlight">\(\mu = E(X)\)</span> and <span class="math notranslate nohighlight">\(\sigma = SD(X)\)</span>. Data scientists often use <span class="math notranslate nohighlight">\(\sigma\)</span> for SD because <span class="math notranslate nohighlight">\(\sigma\)</span> is the Greek for <em>s</em>.</p>
 <p>We are interested in <span class="math notranslate nohighlight">\(P(\vert X - \mu \vert \ge c)\)</span>. The figure below shows such a probability. Notice that it is the total of two tail probabilities.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/3198536394d9577f89f099f64f44ea1fcb7e781084e6e4c1e10ab7c3a3c493aa.png" src="../../_images/3198536394d9577f89f099f64f44ea1fcb7e781084e6e4c1e10ab7c3a3c493aa.png" />
+<img alt="../../_images/30cfa6ffbccb29ad9530b079695d69708aaf22ad3684a83861d4196ef19a17bb.png" src="../../_images/30cfa6ffbccb29ad9530b079695d69708aaf22ad3684a83861d4196ef19a17bb.png" />
 </div>
 </div>
 <p>The absolute deviation <span class="math notranslate nohighlight">\(\vert X - \mu \vert\)</span> is a non-negative random variable, so we could try to use Markov’s inequality to get an upper bound on <span class="math notranslate nohighlight">\(P(\vert X - \mu \vert \ge c)\)</span>. But the bound would involve <span class="math notranslate nohighlight">\(E(\vert X - \mu \vert)\)</span> which we don’t know.</p>
@@ -496,7 +500,7 @@ P(X \in (50, 70)) ~ \ge ~ \frac{3}{4}
 <p>The figure below shows a red arrow at the new origin <span class="math notranslate nohighlight">\(E(X)\)</span> and blue arrows a unit distance away at <span class="math notranslate nohighlight">\(E(X) - SD(X)\)</span> and <span class="math notranslate nohighlight">\(E(X) + SD(X)\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/cc2889e4782327590ae1c9632b91ac56e560d1998a0bc3a2a0cfe801ad119e41.png" src="../../_images/cc2889e4782327590ae1c9632b91ac56e560d1998a0bc3a2a0cfe801ad119e41.png" />
+<img alt="../../_images/ecd87fb90b932dc7b97a53e5cf94d901addf3947c6f8e06cbdcc651508b207ca.png" src="../../_images/ecd87fb90b932dc7b97a53e5cf94d901addf3947c6f8e06cbdcc651508b207ca.png" />
 </div>
 </div>
 <p>Now let’s consider the chance that a random variable is at least <span class="math notranslate nohighlight">\(k\)</span> SDs away from its mean. We can bound this chance by writing an equivalent form of Chebyshev’s inequality:</p>
@@ -520,13 +524,13 @@ P(\vert X - \mu \vert \ge k\sigma) ~ \le ~ \frac{\sigma^2}{k^2\sigma^2} ~ = ~ \f
 <p>Suppose we want an upper bound on just one tail, as in the figure below. The right hand tail probability is <span class="math notranslate nohighlight">\(P(X - \mu \ge c)\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/10fc8225ed2310772d67a92cbbeab10f2643e50188b2853db36c628421f78e19.png" src="../../_images/10fc8225ed2310772d67a92cbbeab10f2643e50188b2853db36c628421f78e19.png" />
+<img alt="../../_images/a526b8904110a0845321f147a065fbba27b31542740aeeeeebc2e63c08818646.png" src="../../_images/a526b8904110a0845321f147a065fbba27b31542740aeeeeebc2e63c08818646.png" />
 </div>
 </div>
 <p>Chebyshev’s inequality gives an upper bound on the total of two tails starting at equal distances on either side of the mean: <span class="math notranslate nohighlight">\(P(\vert X - \mu \vert \ge c)\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/6986364d9d2165a0b5b5df1c258a54b699e5ad6358020adca4ed93154129850e.png" src="../../_images/6986364d9d2165a0b5b5df1c258a54b699e5ad6358020adca4ed93154129850e.png" />
+<img alt="../../_images/32c7edb5b6d0fbba4df0e3900aa96732af956a2bde2fa98a7366e1dc79cb37d9.png" src="../../_images/32c7edb5b6d0fbba4df0e3900aa96732af956a2bde2fa98a7366e1dc79cb37d9.png" />
 </div>
 </div>
 <p>It is tempting to use half of Chebyshev’s bound as the bound for one tail but the figure above shows why that doesn’t work. The two tails don’t have to be equal. Indeed, in the figure above they visibly aren’t equal.</p>

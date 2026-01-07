@@ -1,5 +1,9 @@
 # DATA 88S
 
+  ```{warning}
+  This content is archived as of January 2026 and is retained exclusively for reference.
+```
+
 ## Theory Meets Data
 -------------------------------
 By [Ani Adhikari](http://statistics.berkeley.edu/people/ani-adhikari)

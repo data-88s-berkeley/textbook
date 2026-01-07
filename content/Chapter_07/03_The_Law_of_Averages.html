@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -447,6 +447,14 @@ document.write(`
 </div>
 <section id="the-law-of-averages">
 <h1><span class="section-number">7.3. </span>The Law of Averages<a class="headerlink" href="#the-law-of-averages" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>Informally, the <em>law of averages</em> is the familiar statement that if you toss a coin many times you get about half heads and half tails.</p>
 <p>The main reason for studying the law of averages is to begin to understand why large random samples are the basis for inference in data science. In this section we will take a close look at the informal statement of the law and try to make it more precise. In the process, we will confirm some intuition about probabilities and also come across a fact that may be surprising.</p>
 <section id="the-sample-sum">
@@ -459,7 +467,7 @@ document.write(`
 <p>The figure below shows the probability histograms of <span class="math notranslate nohighlight">\(S_{100}\)</span> and <span class="math notranslate nohighlight">\(S_{400}\)</span>. You can see that the distribution of <span class="math notranslate nohighlight">\(S_{400}\)</span> is wider and to the right of the distribution of <span class="math notranslate nohighlight">\(S_{100}\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/eeac155c851de08a0919a594a9066e1c45b87a591d1901e03f9247a60db005c7.png" src="../../_images/eeac155c851de08a0919a594a9066e1c45b87a591d1901e03f9247a60db005c7.png" />
+<img alt="../../_images/1feeb421f66bd830ce196027497360cad9c5616aa8f384dfe41674b8baaf1c4b.png" src="../../_images/1feeb421f66bd830ce196027497360cad9c5616aa8f384dfe41674b8baaf1c4b.png" />
 </div>
 </div>
 <p>Because the distribution of <span class="math notranslate nohighlight">\(S_{400}\)</span> is wider and the areas of both the histograms are 1, the histogram of <span class="math notranslate nohighlight">\(S_{400}\)</span> is lower than that of <span class="math notranslate nohighlight">\(S_{100}\)</span>. As the sample size <span class="math notranslate nohighlight">\(n\)</span> gets larger, the distribution of the sample sum shifts to the right and gets lower and more spread out.</p>
@@ -592,7 +600,7 @@ SD(A_{400}) ~ = ~ \frac{\sigma}{\sqrt{400}} ~ = ~ \frac{\sigma}{\sqrt{4}\sqrt{10
 <p>The histograms show the distribution of <span class="math notranslate nohighlight">\(A_{100}\)</span> and <span class="math notranslate nohighlight">\(A_{400}\)</span>. Notice that both distributions balance at 0.5, and the distribution of <span class="math notranslate nohighlight">\(A_{400}\)</span> is more concentrated around 0.5.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/fa349eac7bad7e83fc421c421a546eb33505b055f7d8cfaabdf9c3d53cc33524.png" src="../../_images/fa349eac7bad7e83fc421c421a546eb33505b055f7d8cfaabdf9c3d53cc33524.png" />
+<img alt="../../_images/ae24c6cc8c8a35a7b4ee675407537fc00d746aee952e9d0c7a86f080df06fcdf.png" src="../../_images/ae24c6cc8c8a35a7b4ee675407537fc00d746aee952e9d0c7a86f080df06fcdf.png" />
 </div>
 </div>
 <p>In general, the larger the sample size <span class="math notranslate nohighlight">\(n\)</span>, the more likely it is that the sample average <span class="math notranslate nohighlight">\(A_n\)</span> will be close to the population average <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
@@ -631,7 +639,7 @@ P(p - c &lt; A_n &lt; p + c) ~ = ~ P(\vert A_n - p \vert &lt; c) ~ \to ~ 1 ~~~ \
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/ac41a52b79e5f47f1720f3f13f4b32e1de54214914a833fc4a3afc5b3f940861.png" src="../../_images/ac41a52b79e5f47f1720f3f13f4b32e1de54214914a833fc4a3afc5b3f940861.png" />
+<img alt="../../_images/776b37018ad0d0c7baf25f4ebabf6c34bff35dc6ee1aeb3f800fcfb573eee0dc.png" src="../../_images/776b37018ad0d0c7baf25f4ebabf6c34bff35dc6ee1aeb3f800fcfb573eee0dc.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -643,7 +651,7 @@ P(p - c &lt; A_n &lt; p + c) ~ = ~ P(\vert A_n - p \vert &lt; c) ~ \to ~ 1 ~~~ \
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/03a234247a40be9e1f1a91a15a8bbd120bd069e154582f1a71d2cf46038621e2.png" src="../../_images/03a234247a40be9e1f1a91a15a8bbd120bd069e154582f1a71d2cf46038621e2.png" />
+<img alt="../../_images/80abf79e82d123a46d70e09a88d3b04b3878bf37f223e797fb6eaebaa610b955.png" src="../../_images/80abf79e82d123a46d70e09a88d3b04b3878bf37f223e797fb6eaebaa610b955.png" />
 </div>
 </div>
 </section>

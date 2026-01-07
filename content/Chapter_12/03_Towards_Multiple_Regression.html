@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -442,6 +442,10 @@ document.write(`
 </div>
 <section id="towards-multiple-regression">
 <h1><span class="section-number">12.3. </span>Towards Multiple Regression<a class="headerlink" href="#towards-multiple-regression" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>This section is an extended example of applications of the methods we have derived for regression. We will start with simple regression, which we understand well, and will then indicate how some of the results can be extended when there is more than one predictor variable.</p>
 <p>The data are from a study on the treatment of Hodgkin’s disease, a type of cancer that can affect young people. The good news is that treatments for this cancer have <a class="reference external" href="https://en.wikipedia.org/wiki/Hodgkin_lymphoma#Prognosis">high success rates</a>. The bad news is that the treatments can be rather strong combinations of chemotherapy and radiation, and thus have serious side effects. A goal of the study was to identify combinations of treatments with reduced side effects.</p>
 <p>The table <code class="docutils literal notranslate"><span class="pre">hodgkins</span></code> contains data on a random sample of patients. Each row corresponds to a patient. The columns contain the patient’s height in centimeters, the amount of radiation, the amount of medication used in chemotherapy, and measurements on the health of the patient’s lungs.</p>
@@ -518,7 +522,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/0040f936438909c9a87d3ad84f66ac8f78e98c707821f034ce93e5cabd560527.png" src="../../_images/0040f936438909c9a87d3ad84f66ac8f78e98c707821f034ce93e5cabd560527.png" />
+<img alt="../../_images/3e67edafce44b2a894bea1981da24f625dd9a7e990735b8064d8898be624f8d5.png" src="../../_images/3e67edafce44b2a894bea1981da24f625dd9a7e990735b8064d8898be624f8d5.png" />
 </div>
 </div>
 <p>We will regress the difference on the baseline score, this time using the Python module <code class="docutils literal notranslate"><span class="pre">statsmodels</span></code> that allows us to easily perform multiple regression as well. You don’t have to learn the code below (though it’s not hard). Just focus on understanding an interpreting the output.</p>
@@ -898,10 +902,10 @@ document.write(`
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   13.17</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Thu, 13 Mar 2025</td> <th>  Prob (F-statistic):</th>  <td>0.00167</td>
+  <th>Date:</th>             <td>Tue, 06 Jan 2026</td> <th>  Prob (F-statistic):</th>  <td>0.00167</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>14:22:25</td>     <th>  Log-Likelihood:    </th> <td> -92.947</td>
+  <th>Time:</th>                 <td>19:07:31</td>     <th>  Log-Likelihood:    </th> <td> -92.947</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    22</td>      <th>  AIC:               </th> <td>   189.9</td>
@@ -1136,10 +1140,10 @@ document.write(`
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   11.44</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Thu, 13 Mar 2025</td> <th>  Prob (F-statistic):</th> <td>0.000548</td>
+  <th>Date:</th>             <td>Tue, 06 Jan 2026</td> <th>  Prob (F-statistic):</th> <td>0.000548</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>14:22:25</td>     <th>  Log-Likelihood:    </th> <td> -89.820</td>
+  <th>Time:</th>                 <td>19:07:31</td>     <th>  Log-Likelihood:    </th> <td> -89.820</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    22</td>      <th>  AIC:               </th> <td>   185.6</td>
@@ -1229,10 +1233,10 @@ document.write(`
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   5.185</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Thu, 13 Mar 2025</td> <th>  Prob (F-statistic):</th>  <td>0.00645</td>
+  <th>Date:</th>             <td>Tue, 06 Jan 2026</td> <th>  Prob (F-statistic):</th>  <td>0.00645</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>14:22:25</td>     <th>  Log-Likelihood:    </th> <td> -89.741</td>
+  <th>Time:</th>                 <td>19:07:31</td>     <th>  Log-Likelihood:    </th> <td> -89.741</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    22</td>      <th>  AIC:               </th> <td>   189.5</td>

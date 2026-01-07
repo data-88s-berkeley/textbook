@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -449,6 +449,10 @@ document.write(`
 </div>
 <section id="the-distribution-of-the-estimated-slope">
 <span id="ch12-2"></span><h1><span class="section-number">12.2. </span>The Distribution of the Estimated Slope<a class="headerlink" href="#the-distribution-of-the-estimated-slope" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>Our estimate of the signal <span class="math notranslate nohighlight">\(Y = \beta_0 + \beta_1x\)</span> is the corresponding point on the regression line:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -492,7 +496,7 @@ E(\hat{\beta_1}) ~ &amp;= ~ \frac{\frac{1}{n}\sum_{i=1}^n (x_i - \bar{x})E(Y_i -
 <p>The distribution of the estimated slope <span class="math notranslate nohighlight">\(\hat{\beta}_1\)</span> is normal, centered at the true slope <span class="math notranslate nohighlight">\(\beta_1\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/077a8896ed8bf51b9bc6982daa405881f6949e2da333fd70c66ecad513d35da6.png" src="../../_images/077a8896ed8bf51b9bc6982daa405881f6949e2da333fd70c66ecad513d35da6.png" />
+<img alt="../../_images/21f9418644a199ffcba73079bc4c5abc4d23731cc03c120907b902732633d1b5.png" src="../../_images/21f9418644a199ffcba73079bc4c5abc4d23731cc03c120907b902732633d1b5.png" />
 </div>
 </div>
 <p>If we can find <span class="math notranslate nohighlight">\(Var(\hat{\beta}_1)\)</span> then we can use this normal curve for inference. For example,</p>
@@ -593,7 +597,7 @@ T ~ = ~ \frac{\hat{\beta}_1 - \beta_1}{SE(\hat{\beta}_1)}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/6bbc6893ffbab354d92db785c7afb1ee23bd5d4da39be83b6ee61521d1bc2be3.png" src="../../_images/6bbc6893ffbab354d92db785c7afb1ee23bd5d4da39be83b6ee61521d1bc2be3.png" />
+<img alt="../../_images/9b1c864376760a0b66854e9b5ceb2d5316e6310882ad5a63caeabd121bc279b6.png" src="../../_images/9b1c864376760a0b66854e9b5ceb2d5316e6310882ad5a63caeabd121bc279b6.png" />
 </div>
 </div>
 <p>The scatter plot of the active rate versus the resting rate shows a linear relation. The plot is a bit wider in the middle than it is elsewhere, which indicates that the regression model’s assumption of equal error variances for all individuals might not be satisfied. However, we can use the model as a rough approximation of reality.</p>
@@ -712,14 +716,14 @@ T ~ = ~ \frac{\hat{\beta}_1 - 0}{SE(\hat{\beta}_1)}
 <p>The <span class="math notranslate nohighlight">\(t\)</span> density looks like the standard normal curve, except that it has fatter tails. In the figure below, the red curve is the standard normal density and the blue curve is the <span class="math notranslate nohighlight">\(t\)</span> density with <span class="math notranslate nohighlight">\(3\)</span> degrees of freedom.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/3631c8d7fb5eba0681041927d272f1adcd612e6737d333c46ef38568e367053c.png" src="../../_images/3631c8d7fb5eba0681041927d272f1adcd612e6737d333c46ef38568e367053c.png" />
+<img alt="../../_images/e67705c18991611c4a95f6dc390b6a914236bd29ee3337e965a55607cbbb4c4a.png" src="../../_images/e67705c18991611c4a95f6dc390b6a914236bd29ee3337e965a55607cbbb4c4a.png" />
 </div>
 </div>
 <p>You can see that the <span class="math notranslate nohighlight">\(t\)</span> distribution has a bit more weight in the tails than the standard normal does. It gives us just the right additional amount of wiggle room to account for the fact that we are estimating the unknown error variance <span class="math notranslate nohighlight">\(\sigma^2\)</span> based on the data.</p>
 <p>When the degrees of freedom are larger then the <span class="math notranslate nohighlight">\(t\)</span> distributions are almost indistinguishable from the standard normal as you can see below. So it’s fine to use normal approximations the estimated slope when the sample size is large.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/8ce9c0f059273c65f94d840957796dd6f6e7ce05c41abe47eca571143214faed.png" src="../../_images/8ce9c0f059273c65f94d840957796dd6f6e7ce05c41abe47eca571143214faed.png" />
+<img alt="../../_images/230068d71224a5909d448079074cb4c688110a17b699722be9eb6284214d5cba.png" src="../../_images/230068d71224a5909d448079074cb4c688110a17b699722be9eb6284214d5cba.png" />
 </div>
 </div>
 <p>For reasons we won’t go into, under the regression model the exact distribution of the standardized slope <span class="math notranslate nohighlight">\(T\)</span> is <span class="math notranslate nohighlight">\(t\)</span> Number <span class="math notranslate nohighlight">\(n-2\)</span> when the sample size is <span class="math notranslate nohighlight">\(n\)</span>. That is, for any sample size <span class="math notranslate nohighlight">\(n\)</span>, the standardized slope</p>

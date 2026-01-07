@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -443,6 +443,10 @@ document.write(`
 </div>
 <section id="how-large-is-large">
 <h1><span class="section-number">8.4. </span>How Large is “Large”?<a class="headerlink" href="#how-large-is-large" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>Let <span class="math notranslate nohighlight">\(X_1, X_2, \ldots, X_n\)</span> be i.i.d. with mean <span class="math notranslate nohighlight">\(\mu\)</span> and SD <span class="math notranslate nohighlight">\(\sigma\)</span>, and let <span class="math notranslate nohighlight">\(S_n = X_1 + X_2 + \cdots + X_n\)</span>. The Central Limit Theorem says that no matter what the distribution of <span class="math notranslate nohighlight">\(X_1\)</span>, after some large enough <span class="math notranslate nohighlight">\(n\)</span> the distribution of <span class="math notranslate nohighlight">\(S_n\)</span> looks roughly normal.</p>
 <p>This raises the question of how large is “large enough”. We have seen in examples that the answer depends on the distribution of <span class="math notranslate nohighlight">\(X_1\)</span>. If the distribution of <span class="math notranslate nohighlight">\(X_1\)</span> is smooth and symmetric, the distribution of the sample sum can start looking normal even when the sample size <span class="math notranslate nohighlight">\(n\)</span> is moderate. If the distribution of <span class="math notranslate nohighlight">\(X_1\)</span> is skewed or has gaps, then the sample size might have to get larger before the normal approximation is good.</p>
 <section id="approximations-to-the-binomial">
@@ -451,13 +455,13 @@ document.write(`
 <p>And indeed for <span class="math notranslate nohighlight">\(n = 100\)</span> and <span class="math notranslate nohighlight">\(p = 0.5\)</span>, the binomial <span class="math notranslate nohighlight">\((n, p)\)</span> distribution looks beautifully normal.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/ce08cf6867d712b0b9328ec7fc0d6347bcc2a946e9fdaf15fb9597ec1afcd585.png" src="../../_images/ce08cf6867d712b0b9328ec7fc0d6347bcc2a946e9fdaf15fb9597ec1afcd585.png" />
+<img alt="../../_images/43a725f49aca2c818a104e14f41dd1bc71815ef32487bec4d8f82fde66811f6a.png" src="../../_images/43a725f49aca2c818a104e14f41dd1bc71815ef32487bec4d8f82fde66811f6a.png" />
 </div>
 </div>
 <p>A sample size of 100 seems pretty large. Let’s take a look at the binomial <span class="math notranslate nohighlight">\((100, 0.01)\)</span> distribution.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/e809164d16ae7bff48b75a759c97b490bf76c70739940da39f0eec2703dc3f11.png" src="../../_images/e809164d16ae7bff48b75a759c97b490bf76c70739940da39f0eec2703dc3f11.png" />
+<img alt="../../_images/e691b06ead168dd869b2e7e8a01e5ce901c8d02a5663492736289610fbdf0260.png" src="../../_images/e691b06ead168dd869b2e7e8a01e5ce901c8d02a5663492736289610fbdf0260.png" />
 </div>
 </div>
 <p>That’s definitely not normal. It’s close to Poisson with parameter <span class="math notranslate nohighlight">\(\mu = 100 \times 0.01 = 1\)</span>, as you have seen earlier.</p>
@@ -468,13 +472,13 @@ document.write(`
 <p>When <span class="math notranslate nohighlight">\(n = 1000\)</span>, you see the normal curve start to appear.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/35d12fc377b619e6328c4ebe680c2b03e5bcac56afff30d6c201dee1ba84361a.png" src="../../_images/35d12fc377b619e6328c4ebe680c2b03e5bcac56afff30d6c201dee1ba84361a.png" />
+<img alt="../../_images/6066661ae297704eb2ea059a2b7437830e380eafe25bec6b858a2d039de15b1e.png" src="../../_images/6066661ae297704eb2ea059a2b7437830e380eafe25bec6b858a2d039de15b1e.png" />
 </div>
 </div>
 <p>When <span class="math notranslate nohighlight">\(n = 5000\)</span> the normal approximation is excellent.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/ff182bd207586301a141e96157950d007a4da76f07b205c7ccd301e56deb8752.png" src="../../_images/ff182bd207586301a141e96157950d007a4da76f07b205c7ccd301e56deb8752.png" />
+<img alt="../../_images/21c77def4d2d8e9ee13bbda256c424462c70bd09fae2a2398c1c81e9a1f0c20d.png" src="../../_images/21c77def4d2d8e9ee13bbda256c424462c70bd09fae2a2398c1c81e9a1f0c20d.png" />
 </div>
 </div>
 <p>The interplay between the expectation and the SD affects the shape. For a distribution to look normal, the possible values have to stretch for three or fours SDs on both sides of the mean.</p>

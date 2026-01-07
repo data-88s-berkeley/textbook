@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -445,6 +445,10 @@ document.write(`
                   
   <section id="least-squares-linear-regression">
 <h1><span class="section-number">11.3. </span>Least Squares Linear Regression<a class="headerlink" href="#least-squares-linear-regression" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>The mean squared error is a criterion by which you can compare two estimators – the one with the smaller mean squared error is on average closer to the quantity you are trying to estimate. An important use of this criterion is to identify the best among a class of estimators.</p>
 <p>For example, suppose you have a random pair <span class="math notranslate nohighlight">\((X, Y)\)</span> and you want to use a linear function of <span class="math notranslate nohighlight">\(X\)</span> to estimate <span class="math notranslate nohighlight">\(Y\)</span>. That is, you want to estimate <span class="math notranslate nohighlight">\(Y\)</span> by the function <span class="math notranslate nohighlight">\(aX + b\)</span> for some slope <span class="math notranslate nohighlight">\(a\)</span> and intercept <span class="math notranslate nohighlight">\(b\)</span>. Your goal is to find the best in the class of all linear functions. If the criterion is mean squared error, the goal is to see if there is a slope and an intercept that minimize the mean squared error.</p>
 <p>This is the <a class="reference external" href="https://www.inferentialthinking.com/chapters/15/2/Regression_Line.html">regression</a> problem from Data 8, expressed in random variable notation. Recall that in Data 8 you were given formulas for the <a class="reference external" href="https://www.inferentialthinking.com/chapters/15/2/Regression_Line.html#The-Equation-of-the-Regression-Line">slope and intercept</a> of the “best” or “least squares” line, also known as the regression line. In Data 8 notation the formulas are:</p>

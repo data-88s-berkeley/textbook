@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -445,6 +445,10 @@ document.write(`
 </div>
 <section id="confidence-intervals-interpretation">
 <h1><span class="section-number">9.2. </span>Confidence Intervals: Interpretation<a class="headerlink" href="#confidence-intervals-interpretation" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>Because of the Central Limit Theorem, confidence intervals for population means are easy to compute if the sample is large. This section is a summary of how to interpret the intervals, and how not to.</p>
 <section id="chance-and-confidence">
 <h2><span class="section-number">9.2.1. </span>Chance and Confidence<a class="headerlink" href="#chance-and-confidence" title="Link to this heading">#</a></h2>
@@ -540,7 +544,7 @@ P(\mu \in \text{ random interval }) ~ \approx ~ 0.95
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/da0042896e3d71ed206c12d2b6f238f411e36fcb03ea61071493f7868032e426.png" src="../../_images/da0042896e3d71ed206c12d2b6f238f411e36fcb03ea61071493f7868032e426.png" />
+<img alt="../../_images/37d79e14c399510ba8795abb002d5593241616386d094c310368b409ef1aff2f.png" src="../../_images/37d79e14c399510ba8795abb002d5593241616386d094c310368b409ef1aff2f.png" />
 </div>
 </div>
 <p>The sample mean is about 27.23 years and the sample SD is about 5.8 years.</p>
@@ -608,7 +612,7 @@ P(\mu \in \text{ random interval }) ~ \approx ~ 0.95
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/6eef7486c37f6b66c05e256837901796f0e4ff5ee8ac7714c2869489ea771daf.png" src="../../_images/6eef7486c37f6b66c05e256837901796f0e4ff5ee8ac7714c2869489ea771daf.png" />
+<img alt="../../_images/6198b004b9783576e0a5d12dc10006cb6fa7facabb7857ebc360c01d3dc01717.png" src="../../_images/6198b004b9783576e0a5d12dc10006cb6fa7facabb7857ebc360c01d3dc01717.png" />
 </div>
 </div>
 <p>Finally, we found the “middle 95%” of the bootstrapped means. That was our empirical bootstrap 95% confidence interval for the population mean.</p>
@@ -621,7 +625,7 @@ P(\mu \in \text{ random interval }) ~ \approx ~ 0.95
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(26.895229982964224, 27.556218057921637)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(26.905451448040886, 27.545996592844975)
 </pre></div>
 </div>
 </div>
@@ -633,7 +637,7 @@ P(\mu \in \text{ random interval }) ~ \approx ~ 0.95
 <p>Here is the histogram of the sampled ages again for reference. The arrow on the horizontal axis is at the sample average 27.23.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/73bf14f63aa04f2a49a04eac5ad1926eef61a694047ea14a87028553f07ecbdb.png" src="../../_images/73bf14f63aa04f2a49a04eac5ad1926eef61a694047ea14a87028553f07ecbdb.png" />
+<img alt="../../_images/0ae2f8b14f0051a3300df5e9396f763d06000905efb71f82435a27c977d99c5b.png" src="../../_images/0ae2f8b14f0051a3300df5e9396f763d06000905efb71f82435a27c977d99c5b.png" />
 </div>
 </div>
 <p>The <strong>SD of the sample</strong> is about 5.8 years. That’s the SD of the distribution displayed above. It measures roughly how far the values in the sample are from their mean which is at the arrow.</p>
@@ -650,7 +654,7 @@ SD(\bar{X}) ~ = ~ \frac{\sigma}{\sqrt{n}} ~ \approx ~ \frac{5.8}{\sqrt{1174}} ~ 
 <p>The SD of the sample mean measures the rough size of the distance between the two arrows. It’s tiny because the mean of a large sample is most likely pretty close to the mean of the population.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/c0daa29f00e0f07b0046327c2aa3c9d44e963d87a99cafacc63c6f7d2f0d5d30.png" src="../../_images/c0daa29f00e0f07b0046327c2aa3c9d44e963d87a99cafacc63c6f7d2f0d5d30.png" />
+<img alt="../../_images/cbb9c9e2d7ddc435d3f361492a1aad7575d534de742a4bc1f6343ad0d2cba921.png" src="../../_images/cbb9c9e2d7ddc435d3f361492a1aad7575d534de742a4bc1f6343ad0d2cba921.png" />
 </div>
 </div>
 </section>

@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -448,6 +448,10 @@ document.write(`
 </div>
 <section id="sums-of-independent-random-variables">
 <h1><span class="section-number">7.1. </span>Sums of Independent Random Variables<a class="headerlink" href="#sums-of-independent-random-variables" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>For two random variables <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>, the additivity property <span class="math notranslate nohighlight">\(E(X+Y) = E(X) + E(Y)\)</span> is true regardless of the dependence or independence of <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span>.</p>
 <p>But variance doesn’t behave quite like this. Let’s look at an example.</p>
 <section id="two-rolls-of-a-die">
@@ -465,7 +469,7 @@ document.write(`
 <p>The figure below show the probability distributions of <span class="math notranslate nohighlight">\(V\)</span> and <span class="math notranslate nohighlight">\(W\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/ffa1032f71dddc81125af997baa618621a6d160edd5360b5b3aaf2bd4b8b0958.png" src="../../_images/ffa1032f71dddc81125af997baa618621a6d160edd5360b5b3aaf2bd4b8b0958.png" />
+<img alt="../../_images/240fdcfc3bcedd5658e6451d169e05edcadeebd1364d4f2eaa09153eda923a8a.png" src="../../_images/240fdcfc3bcedd5658e6451d169e05edcadeebd1364d4f2eaa09153eda923a8a.png" />
 </div>
 </div>
 <p>The figure shows that the distribution of <span class="math notranslate nohighlight">\(V\)</span> (the blue histogram) has a larger spread than that of <span class="math notranslate nohighlight">\(W\)</span> (the gold histogram). Both distributions are centered at 7 but the blue distribution has more mass on the extreme values.</p>
@@ -546,7 +550,7 @@ X ~ = ~ I_1 + I_2 + \cdots + I_n
 <p>The figure below shows the probability histogram of <span class="math notranslate nohighlight">\(X\)</span>. The red arrow is at <span class="math notranslate nohighlight">\(E(X) = 50\)</span> and the red arrows are at <span class="math notranslate nohighlight">\(E(X) \pm SD(X)\)</span>, that is, at 45 and 55.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/e2317fd091955921b0c161051b3105c0dedf755a1cf9d0e75e610faf08748cf2.png" src="../../_images/e2317fd091955921b0c161051b3105c0dedf755a1cf9d0e75e610faf08748cf2.png" />
+<img alt="../../_images/038906dafae7648e29af8630b9b644a7fedc199d579f8a8897ccd2f028a88feb.png" src="../../_images/038906dafae7648e29af8630b9b644a7fedc199d579f8a8897ccd2f028a88feb.png" />
 </div>
 </div>
 </section>
@@ -555,14 +559,14 @@ X ~ = ~ I_1 + I_2 + \cdots + I_n
 <p>The function <span class="math notranslate nohighlight">\(g(p) = pq = p(1-p)\)</span> is a quadratic function of <span class="math notranslate nohighlight">\(p\)</span> and is maximized at <span class="math notranslate nohighlight">\(p = 1/2\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/5a2f0f932f152664ca678d589e719f7f53193dacb4f763b23e6402176021746c.png" src="../../_images/5a2f0f932f152664ca678d589e719f7f53193dacb4f763b23e6402176021746c.png" />
+<img alt="../../_images/be31f79ff7780cb05a3d5d0e1abad2f09ea19c4abd3658b36ed8940910961727.png" src="../../_images/be31f79ff7780cb05a3d5d0e1abad2f09ea19c4abd3658b36ed8940910961727.png" />
 </div>
 </div>
 <p>Since <span class="math notranslate nohighlight">\(pq \le 0.25\)</span>, we have <span class="math notranslate nohighlight">\(\sqrt{pq} \le 0.5\)</span>. We will sometimes use <span class="math notranslate nohighlight">\(0.5\)</span> as an upper bound for <span class="math notranslate nohighlight">\(\sqrt{pq}\)</span> if we don’t know <span class="math notranslate nohighlight">\(p\)</span>.</p>
 <p>Because of this bound, we say that the fair coin is the most variable. For example, here are the histograms of the binomial <span class="math notranslate nohighlight">\((10, 0.5)\)</span> and binomial <span class="math notranslate nohighlight">\((10, 0.1)\)</span> distributions. The latter is clearly less spread out.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/d844c3c6fb0333eb0906b90df0484d656814c0c296afd09d82875b43b98ac54a.png" src="../../_images/d844c3c6fb0333eb0906b90df0484d656814c0c296afd09d82875b43b98ac54a.png" />
+<img alt="../../_images/bcf72bc61f60c67af9b04d9cd9c19a19aaac6aef2a1b803eed3ac085146eca70.png" src="../../_images/bcf72bc61f60c67af9b04d9cd9c19a19aaac6aef2a1b803eed3ac085146eca70.png" />
 </div>
 </div>
 </section>

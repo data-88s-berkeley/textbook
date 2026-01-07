@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -443,6 +443,10 @@ document.write(`
 </div>
 <section id="cumulative-distribution-function-cdf">
 <h1><span class="section-number">4.1. </span>Cumulative Distribution Function (CDF)<a class="headerlink" href="#cumulative-distribution-function-cdf" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>There are many ways of specifying distributions. We have sometimes used a table to display the distribution of a random variable <span class="math notranslate nohighlight">\(X\)</span>. At other times we have written <span class="math notranslate nohighlight">\(P(X = k)\)</span> as a formula for each possible value <span class="math notranslate nohighlight">\(k\)</span> of <span class="math notranslate nohighlight">\(X\)</span>.</p>
 <p>Another useful function that encapsulates all the information about the distribution of <span class="math notranslate nohighlight">\(X\)</span> is called the <em>cumulative distribution function</em> of <span class="math notranslate nohighlight">\(X\)</span>. That’s a real mouthful, so it is usually abbreviated to the cdf of <span class="math notranslate nohighlight">\(X\)</span>.</p>
 <p>Let’s see what the cdf is in an example.</p>
@@ -475,7 +479,7 @@ F(x) ~ = ~ P(X \le x), ~~~~~ -\infty &lt; x &lt; \infty
 <p>The gold area in the probability histogram below is <span class="math notranslate nohighlight">\(F(2)\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/4e525fc69f4a3a8bf587a762e49cf01ee0e89b0783369dff6da4fbdaf656b88e.png" src="../../_images/4e525fc69f4a3a8bf587a762e49cf01ee0e89b0783369dff6da4fbdaf656b88e.png" />
+<img alt="../../_images/1265f09610d61b1118bfea1711cca2164225e32f3532883db51e6af07d27a91f.png" src="../../_images/1265f09610d61b1118bfea1711cca2164225e32f3532883db51e6af07d27a91f.png" />
 </div>
 </div>
 <p>We will sometimes use the loose term “left hand probabilities” to denote values of <span class="math notranslate nohighlight">\(F\)</span>. Each of those values <span class="math notranslate nohighlight">\(F(x)\)</span> is the area of the bar at <span class="math notranslate nohighlight">\(x\)</span> as well as all the bars to the left. In the figure above,</p>
@@ -526,7 +530,7 @@ P(X = x) ~ = ~ P(X \le x) - P(X \le x-1) ~ = ~ F(x) - F(x-1)
 <p>You can see all these properties in the graph of the function <span class="math notranslate nohighlight">\(F\)</span> defined above.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/8e99c0bf58900dfbdccd9fa0308d34536573d8e561d8a8ed82707a06bf5af255.png" src="../../_images/8e99c0bf58900dfbdccd9fa0308d34536573d8e561d8a8ed82707a06bf5af255.png" />
+<img alt="../../_images/b7f54adb37330c33890de1f1a75fc6a5d016e60f43fa3b31c3cde1386db75cef.png" src="../../_images/b7f54adb37330c33890de1f1a75fc6a5d016e60f43fa3b31c3cde1386db75cef.png" />
 </div>
 </div>
 <p>You can see also that the graph has flat parts and jumps.</p>

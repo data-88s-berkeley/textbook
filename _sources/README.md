@@ -22,6 +22,21 @@ Follow these steps the first time you set up a computer to modify and maintain t
 1. Create a local copy of this repo by running `git clone https://github.com/stat88/textbook.git` from the command line in whichever folder you want to contain the textbook.
 2. Next, you need to install all the required packages. Either of the commands `pip install -r requirements.txt` or `conda install --file requirements.txt` should work. If you have a Windows device, it's preferable to run this in an Anaconda Prompt terminal. This should install the two packages `jupyter-book` and `ghp-import`, which are used for building and deploying the textbook, respectively, and a bunch of other typical packages (e.g. `numpy`, `scipy`, `matplotlib`, etc.) used by the `content/` notebooks.
 
+#### Note from Silas's Archiving Experience
+I ended up with a weird configuration where I have a python virtual environment `venv` created with `python3 -m venv venv` that with requirements from `requirements.txt` installed via `pip install -r requirements.txt` inside the activated virtual environment. But I get the following conflict when trying to access any jupyter-book command where v2 takes precedence over v1 (required for this textbook):
+```
+(venv) (base) silascs@M29LX9JT4N textbook % which jupyter-book
+/Users/silascs/.nvm/versions/node/v20.19.2/bin/jupyter-book
+(venv) (base) silascs@M29LX9JT4N textbook % ./venv/bin/jupyter-book --version
+Jupyter Book      : 1.0.4.post1
+External ToC      : 1.0.1
+MyST-Parser       : 3.0.1
+MyST-NB           : 1.3.0
+Sphinx Book Theme : 1.1.4
+Jupyter-Cache     : 1.0.1
+NbClient          : 0.10.4
+```
+Thus, I need to use `./venv/bin/jupyter-book` in place of `jupyter-book` for all commands.
 
 ### Updating the Textbook
 These steps detail the process you should go through every time you update the textbook.

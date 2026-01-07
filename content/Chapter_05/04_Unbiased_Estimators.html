@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -448,6 +448,10 @@ document.write(`
 </div>
 <section id="unbiased-estimators">
 <span id="ch5-4"></span><h1><span class="section-number">5.4. </span>Unbiased Estimators<a class="headerlink" href="#unbiased-estimators" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>Data scientists often use information in random samples to estimate unknown numercial quantities. For example, they might estimate the unknown average income in a large population by using incomes in a random sample drawn from the population. In this section we will examine one criterion for a good estimate.</p>
 <p>First let’s note a straightforward but extremely handy property of expectation.</p>
 <section id="preliminary-linear-function-rule">
@@ -523,10 +527,10 @@ E(\bar{X}) ~ = ~ E\big{(} \frac{1}{n}\sum_{i=1}^n X_i \big{)} ~ = ~ \frac{1}{n}\
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>n = 30
 p = 0.1667
-Average of observed sample proportions = 0.1666
+Average of observed sample proportions = 0.1669
 </pre></div>
 </div>
-<img alt="../../_images/0ed79741a9f3edff6a46c787ac196bbc8bbb11ce4b1042be6759e9e7029b06fb.png" src="../../_images/0ed79741a9f3edff6a46c787ac196bbc8bbb11ce4b1042be6759e9e7029b06fb.png" />
+<img alt="../../_images/7fbc8c1c290a85613ce2b99c7dec34cc17a778c205033982b47db234718f38b5.png" src="../../_images/7fbc8c1c290a85613ce2b99c7dec34cc17a778c205033982b47db234718f38b5.png" />
 </div>
 </div>
 </section>
@@ -574,7 +578,7 @@ n = 30
 5000 repetitions
 </pre></div>
 </div>
-<img alt="../../_images/d843a1534de91be1b236bf4a07f10d1f91b11711beb8c26f702ca30377d74547.png" src="../../_images/d843a1534de91be1b236bf4a07f10d1f91b11711beb8c26f702ca30377d74547.png" />
+<img alt="../../_images/2e1ecec6f76331997bfef1ebc8559c45ec24920c938be35706a0935e0419e820.png" src="../../_images/2e1ecec6f76331997bfef1ebc8559c45ec24920c938be35706a0935e0419e820.png" />
 </div>
 </div>
 <p>The histograms show that both estimators have pros and cons.</p>

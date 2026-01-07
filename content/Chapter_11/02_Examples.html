@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -445,6 +445,10 @@ document.write(`
 </div>
 <section id="examples">
 <h1><span class="section-number">11.2. </span>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
 <p>We have seen in the previous section that when assessing an estimator, the bias and variance of the estimator are the <em>only</em> aspects of the estimator that determine its mean-squared error. In this section, we’ll take a look at some examples of estimators through the lens of this bias-variance decomposition.</p>
 <section id="the-german-tank-problem-revisited">
 <h2><span class="section-number">11.2.1. </span>The German Tank Problem, Revisited<a class="headerlink" href="#the-german-tank-problem-revisited" title="Link to this heading">#</a></h2>
@@ -478,7 +482,7 @@ T_1 ~ = ~ 2\bar{X} - 1
 <p>But not by much! The figure below shows the empirical histograms of <span class="math notranslate nohighlight">\(T_1\)</span> and <span class="math notranslate nohighlight">\(T_2\)</span> based on 10,000 repetitions of drawing a random sample of size 30 with replacement from the integers <span class="math notranslate nohighlight">\(1\)</span> through <span class="math notranslate nohighlight">\(300\)</span> and computing <span class="math notranslate nohighlight">\(T_1\)</span> and <span class="math notranslate nohighlight">\(T_2\)</span> for each sample. You can see that the distribution of the sample maximum <span class="math notranslate nohighlight">\(T_2\)</span> puts a lot of mass just to the left of the population maximum <span class="math notranslate nohighlight">\(300\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/b9ba840271d23b0fa32c22471857897d399cb69955677787178b0f5a734ebc51.png" src="../../_images/b9ba840271d23b0fa32c22471857897d399cb69955677787178b0f5a734ebc51.png" />
+<img alt="../../_images/2196cfa944560653778607962d9fa8b2199eaa5a0c28ad8d3c41ac5f319740f6.png" src="../../_images/2196cfa944560653778607962d9fa8b2199eaa5a0c28ad8d3c41ac5f319740f6.png" />
 </div>
 </div>
 <p>The blue histogram shows the empirical distribution of <span class="math notranslate nohighlight">\(T_1 = 2\bar{X} - 1\)</span>. It is roughly normal because the distribution of <span class="math notranslate nohighlight">\(\bar{X}\)</span> is roughly normal by the Central Limit Theorem.</p>
@@ -500,7 +504,7 @@ f_\theta(x) ~ = ~
 <p>The graph of the density is shown below. Check that you agree with the values of <span class="math notranslate nohighlight">\(f_\theta(x)\)</span> shown for <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(x = \theta/2\)</span>, and <span class="math notranslate nohighlight">\(x = \theta\)</span>.</p>
 <div class="cell tag_remove_input docutils container">
 <div class="cell_output docutils container">
-<img alt="../../_images/15935ce1736c620538634c35f575166186409f7d30d8a8084fad5158feb5fa6f.png" src="../../_images/15935ce1736c620538634c35f575166186409f7d30d8a8084fad5158feb5fa6f.png" />
+<img alt="../../_images/a8c33c5cdf10211268fe350dc150479e4d867c7c32c447a02a540a6683e70244.png" src="../../_images/a8c33c5cdf10211268fe350dc150479e4d867c7c32c447a02a540a6683e70244.png" />
 </div>
 </div>
 <p>Our goal is to estimate <span class="math notranslate nohighlight">\(\theta\)</span> based on <span class="math notranslate nohighlight">\(X\)</span>. Let’s try simply using <span class="math notranslate nohighlight">\(X\)</span> as our estimator, and find the mean squared error.</p>

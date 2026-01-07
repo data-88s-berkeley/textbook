@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -426,7 +426,10 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure">Structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintaining-the-textbook">Maintaining the Textbook</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-time-setup">One-time Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-time-setup">One-time Setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#note-from-silas-s-archiving-experience">Note from Silas’s Archiving Experience</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-the-textbook">Updating the Textbook</a></li>
 </ul>
 </li>
@@ -481,6 +484,23 @@ document.write(`
 <li><p>Create a local copy of this repo by running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/stat88/textbook.git</span></code> from the command line in whichever folder you want to contain the textbook.</p></li>
 <li><p>Next, you need to install all the required packages. Either of the commands <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">--file</span> <span class="pre">requirements.txt</span></code> should work. If you have a Windows device, it’s preferable to run this in an Anaconda Prompt terminal. This should install the two packages <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> and <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>, which are used for building and deploying the textbook, respectively, and a bunch of other typical packages (e.g. <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, etc.) used by the <code class="docutils literal notranslate"><span class="pre">content/</span></code> notebooks.</p></li>
 </ol>
+<section id="note-from-silas-s-archiving-experience">
+<h4>Note from Silas’s Archiving Experience<a class="headerlink" href="#note-from-silas-s-archiving-experience" title="Link to this heading">#</a></h4>
+<p>I ended up with a weird configuration where I have a python virtual environment <code class="docutils literal notranslate"><span class="pre">venv</span></code> created with <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">venv</span> <span class="pre">venv</span></code> that with requirements from <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> installed via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code> inside the activated virtual environment. But I get the following conflict when trying to access any jupyter-book command where v2 takes precedence over v1 (required for this textbook):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">venv</span><span class="p">)</span> <span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">silascs</span><span class="nd">@M29LX9JT4N</span> <span class="n">textbook</span> <span class="o">%</span> <span class="n">which</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+<span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">silascs</span><span class="o">/.</span><span class="n">nvm</span><span class="o">/</span><span class="n">versions</span><span class="o">/</span><span class="n">node</span><span class="o">/</span><span class="n">v20</span><span class="mf">.19.2</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+<span class="p">(</span><span class="n">venv</span><span class="p">)</span> <span class="p">(</span><span class="n">base</span><span class="p">)</span> <span class="n">silascs</span><span class="nd">@M29LX9JT4N</span> <span class="n">textbook</span> <span class="o">%</span> <span class="o">./</span><span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">Jupyter</span> <span class="n">Book</span>      <span class="p">:</span> <span class="mf">1.0.4</span><span class="o">.</span><span class="n">post1</span>
+<span class="n">External</span> <span class="n">ToC</span>      <span class="p">:</span> <span class="mf">1.0.1</span>
+<span class="n">MyST</span><span class="o">-</span><span class="n">Parser</span>       <span class="p">:</span> <span class="mf">3.0.1</span>
+<span class="n">MyST</span><span class="o">-</span><span class="n">NB</span>           <span class="p">:</span> <span class="mf">1.3.0</span>
+<span class="n">Sphinx</span> <span class="n">Book</span> <span class="n">Theme</span> <span class="p">:</span> <span class="mf">1.1.4</span>
+<span class="n">Jupyter</span><span class="o">-</span><span class="n">Cache</span>     <span class="p">:</span> <span class="mf">1.0.1</span>
+<span class="n">NbClient</span>          <span class="p">:</span> <span class="mf">0.10.4</span>
+</pre></div>
+</div>
+<p>Thus, I need to use <code class="docutils literal notranslate"><span class="pre">./venv/bin/jupyter-book</span></code> in place of <code class="docutils literal notranslate"><span class="pre">jupyter-book</span></code> for all commands.</p>
+</section>
 </section>
 <section id="updating-the-textbook">
 <h3>Updating the Textbook<a class="headerlink" href="#updating-the-textbook" title="Link to this heading">#</a></h3>
@@ -616,7 +636,10 @@ Someone should go through the textbook at some point and add flags to all sectio
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure">Structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintaining-the-textbook">Maintaining the Textbook</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-time-setup">One-time Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#one-time-setup">One-time Setup</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#note-from-silas-s-archiving-experience">Note from Silas’s Archiving Experience</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-the-textbook">Updating the Textbook</a></li>
 </ul>
 </li>
