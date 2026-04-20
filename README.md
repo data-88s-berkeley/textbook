@@ -2,7 +2,7 @@
 
 This repository is archived as DATA 88S is no longer going to be taught at UC Berkeley. Materials are retained exclusively for reference and may not meet accessibility standards.
 
-This textbook was built with [Jupyter Books](https://jupyterbook.org/en/stable/intro.html). The textbook was originally built by Francie McQuarrie using Jupyter Book. Shahzar reconfigured the textbook for the updated Jupyter Books.
+This textbook was built with [Jupyter Book](https://jupyterbook.org/en/stable/intro.html). The textbook was originally built by Francie McQuarrie using Jupyter Book. Shahzar reconfigured the textbook for the updated Jupyter Books.
 
 ## Structure
 
