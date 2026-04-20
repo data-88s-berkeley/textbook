@@ -1,0 +1,690 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>11.2. Examples &#8212; Data 88S Textbook</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/Chapter_11/02_Examples';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11.3. Least Squares Linear Regression" href="03_Least_Squares_Linear_Regression.html" />
+    <link rel="prev" title="11.1. Bias and Variance" href="01_Bias_and_Variance.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/data88s_logo.png" class="logo__image only-light" alt="Data 88S Textbook - Home"/>
+    <script>document.write(`<img src="../../_static/data88s_logo.png" class="logo__image only-dark" alt="Data 88S Textbook - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="http://stat88.org">Course Home</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_01/00_The_Basics.html">1. The Basics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_01/01_Probabilities_as_Proportions.html">1.1. Probabilities as Proportions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_01/02_Exact_Calculation_or_Bound.html">1.2. Exact Calculation, or Bound?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_01/03_Fundamental_Rules.html">1.3. Fundamental Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_01/04_Exercises.html">1.4. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_02/00_Intersections_and_Conditioning.html">2. Intersections and Conditioning</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_02/01_The_Chance_of_an_Intersection.html">2.1. The Chance of an Intersection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_02/02_Symmetry_in_Simple_Random_Sampling.html">2.2. Symmetry in Simple Random Sampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_02/03_Bayes_Rule.html">2.3. Bayes’ Rule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_02/04_Use_and_Interpretation.html">2.4. Use and Interpretation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_02/05_Independence.html">2.5. Independence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_02/06_Exercises.html">2.6. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_03/00_Random_Counts.html">3. Random Counts</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_03/01_Success_and_Failure.html">3.1. Success and Failure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_03/02_Random_Variables.html">3.2. Random Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_03/03_The_Binomial_Distribution.html">3.3. The Binomial Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_03/04_The_Hypergeometric_Distribution.html">3.4. The Hypergeometric Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_03/05_Examples.html">3.5. Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_03/06_Exercises.html">3.6. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_04/00_Infinitely_Many_Values.html">4. Infinitely Many Values</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_04/01_Cumulative_Distribution_Function.html">4.1. Cumulative Distribution Function (CDF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_04/02_Waiting_Times.html">4.2. Waiting Times</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_04/03_Exponential_Approximations.html">4.3. Exponential Approximations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_04/04_The_Poisson_Distribution.html">4.4. The Poisson Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_04/05_Exercises.html">4.5. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_05/00_Expectation.html">5. Expectation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_05/01_Definition.html">5.1. Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_05/02_Functions_of_Random_Variables.html">5.2. Functions of Random Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_05/03_Method_of_Indicators.html">5.3. Method of Indicators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_05/04_Unbiased_Estimators.html">5.4. Unbiased Estimators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_05/05_Conditional_Expectation.html">5.5. Conditional Expectation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_05/06_Expectation_by_Conditioning.html">5.6. Expectation by Conditioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_05/07_Exercises.html">5.7. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_06/00_Measuring_Variability.html">6. Measuring Variability</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_06/01_Variance_and_Standard_Deviation.html">6.1. Variance and Standard Deviation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_06/02_Simplifying_the_Calculation.html">6.2. Simplifying the Calculation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_06/03_Markovs_Inequality.html">6.3. Markov’s Inequality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_06/04_Chebyshevs_Inequality.html">6.4. Chebyshev’s Inequality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_06/05_Exercises.html">6.5. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_07/00_The_Variance_of_a_Sum.html">7. The Variance of a Sum</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_07/01_Sums_of_Independent_Random_Variables.html">7.1. Sums of Independent Random Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_07/02_Sampling_Without_Replacement.html">7.2. Sampling Without Replacement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_07/03_The_Law_of_Averages.html">7.3. The Law of Averages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_07/04_Exercises.html">7.4. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_08/00_Central_Limit_Theorem.html">8. Central Limit Theorem</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_08/01_Distribution_of_a_Sample_Sum.html">8.1. The Distribution of a Sample Sum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_08/02_Standard_Normal_Curve.html">8.2. Standard Normal Curve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_08/03_Normal_Approximation.html">8.3. Normal Approximation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_08/04_How_Large_is_Large.html">8.4. How Large is “Large”?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_08/05_Exercises.html">8.5. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_09/00_Inference.html">9. Inference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_09/01_Confidence_Intervals_Method.html">9.1. Confidence Intervals: Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_09/02_Confidence_Intervals_Interpretation.html">9.2. Confidence Intervals: Interpretation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_09/03_Testing_Hypotheses.html">9.3. Testing Hypotheses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_09/04_AB_Testing_Fishers_Exact_Test.html">9.4. A/B Testing: Fisher’s Exact Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_09/05_Exercises.html">9.5. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_10/00_Probability_Density.html">10. Probability Density</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_10/01_Density.html">10.1. Density</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_10/02_Expectation_and_Variance.html">10.2. Expectation and Variance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_10/03_The_Exponential_Distribution.html">10.3. Exponential Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_10/04_The_Normal_Distribution.html">10.4. The Normal Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_10/05_Exercises.html">10.5. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="00_Bias_Variance_and_Least_Squares.html">11. Bias, Variance, and Least Squares</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="01_Bias_and_Variance.html">11.1. Bias and Variance</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">11.2. Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_Least_Squares_Linear_Regression.html">11.3. Least Squares Linear Regression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_Bounds_on_Correlation.html">11.4. Bounds on Correlation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_The_Error_in_Regression.html">11.5. The Error in Regression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_Exercises.html">11.6. Exercises</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Chapter_12/00_Inference_in_Regression.html">12. Inference in Regression</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_12/01_The_Simple_Linear_Regression_Model.html">12.1. The Simple Linear Regression Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_12/02_The_Distribution_of_the_Estimated_Slope.html">12.2. The Distribution of the Estimated Slope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_12/03_Towards_Multiple_Regression.html">12.3. Towards Multiple Regression</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Chapter_12/04_Exercises.html">12.4. Exercises</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/content/Chapter_11/02_Examples.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Examples</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-german-tank-problem-revisited">11.2.1. The German Tank Problem, Revisited</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-mean-squared-error">11.2.2. Calculating Mean Squared Error</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell tag_remove_input docutils container">
+</div>
+<div class="cell tag_remove_input docutils container">
+</div>
+<section id="examples">
+<h1><span class="section-number">11.2. </span>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This content is archived as of January 2026 and is retained exclusively for reference.</p>
+</div>
+<p>We have seen in the previous section that when assessing an estimator, the bias and variance of the estimator are the <em>only</em> aspects of the estimator that determine its mean-squared error. In this section, we’ll take a look at some examples of estimators through the lens of this bias-variance decomposition.</p>
+<section id="the-german-tank-problem-revisited">
+<h2><span class="section-number">11.2.1. </span>The German Tank Problem, Revisited<a class="headerlink" href="#the-german-tank-problem-revisited" title="Link to this heading">#</a></h2>
+<p>Earlier in the course we examined the <a class="reference internal" href="../Chapter_05/04_Unbiased_Estimators.html#ch5-4-7"><span class="std std-ref">German tank problem</span></a> in which statisticians helped the Allies estimate the number of tanks Germany was manufacturing in World War II.</p>
+<p>We will continue to use a simpler model than the one the Allies had used. We will start by assuming, as the Allies had, that the tanks were numbered sequentially from 1 through <span class="math notranslate nohighlight">\(N\)</span>. The goal was to estimate <span class="math notranslate nohighlight">\(N\)</span> from the serial numbers on the tanks that were observed. Our model says that these numbers were like draws <em>with</em> replacement from <span class="math notranslate nohighlight">\(1, 2, 3, \ldots, N\)</span>.</p>
+<p>As that’s not a great model for serial numbers observed on tanks that have been captured or destroyed, the Allies assumed that the draws were without replacement. But we can still get a good sense of the estimates by using the simpler model of independent draws. The number of captured or destroyed tanks was small relative to the number produced, so it is reasonable to assume that <span class="math notranslate nohighlight">\(n\)</span> is quite a bit smaller than <span class="math notranslate nohighlight">\(N\)</span>. In that situation there isn’t much difference between drawing with and without replacement.</p>
+<p>Formally, we are assuming that the serial numbers of the observed tanks are random variables <span class="math notranslate nohighlight">\(X_1, X_2, \ldots, X_n\)</span> drawn uniformly at random with replacement from <span class="math notranslate nohighlight">\(\{1, 2, 3, \ldots, N\}\)</span>.</p>
+<p>Since <span class="math notranslate nohighlight">\(X_1, X_2, \ldots, X_n\)</span> are i.i.d. uniform on <span class="math notranslate nohighlight">\(\{1, 2, 3, \ldots, N\}\)</span>, for each <span class="math notranslate nohighlight">\(i\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
+E(X_i) ~ = ~ \frac{N+1}{2} 
+\]</div>
+<p>Hence if <span class="math notranslate nohighlight">\(\bar{X}\)</span> is the sample average, then</p>
+<div class="math notranslate nohighlight">
+\[
+E(\bar{X}) ~ = ~ \frac{N+1}{2}
+\]</div>
+<p>This is a linear function of the parameter <span class="math notranslate nohighlight">\(N\)</span>. So by inverting the function (that is, isolating <span class="math notranslate nohighlight">\(N\)</span>), we can construct an unbiased estimator of <span class="math notranslate nohighlight">\(N\)</span>. We have</p>
+<div class="math notranslate nohighlight">
+\[
+N ~ = ~ 2E(\bar{X}) - 1
+\]</div>
+<p>This is an equality of constants, but we’ll never know <span class="math notranslate nohighlight">\(E(\bar{X})\)</span> because that quantity involves <span class="math notranslate nohighlight">\(N\)</span>  which is exactly what we are trying to estimate. However, by linearity of expectation, the random variable</p>
+<div class="math notranslate nohighlight">
+\[
+T_1 ~ = ~ 2\bar{X} - 1
+\]</div>
+<p>has expectation <span class="math notranslate nohighlight">\(N\)</span> and hence is an unbiased estimator of <span class="math notranslate nohighlight">\(N\)</span>. It can be calculated based on the sample <span class="math notranslate nohighlight">\(X_1, X_2, \ldots, X_n\)</span>.</p>
+<p>We have called this estimator <span class="math notranslate nohighlight">\(T_1\)</span> because it is the first of two competing estimators of <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<p>Another natural estimator of <span class="math notranslate nohighlight">\(N\)</span> is <span class="math notranslate nohighlight">\(T_2 = \max\{X_1, X_2, \ldots, X_n\}\)</span>, the maximum of the observed numbers. This estimator is clearly biased. It is always less than or equal to <span class="math notranslate nohighlight">\(N\)</span>. So on average, it will underestimate <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<p>But not by much! The figure below shows the empirical histograms of <span class="math notranslate nohighlight">\(T_1\)</span> and <span class="math notranslate nohighlight">\(T_2\)</span> based on 10,000 repetitions of drawing a random sample of size 30 with replacement from the integers <span class="math notranslate nohighlight">\(1\)</span> through <span class="math notranslate nohighlight">\(300\)</span> and computing <span class="math notranslate nohighlight">\(T_1\)</span> and <span class="math notranslate nohighlight">\(T_2\)</span> for each sample. You can see that the distribution of the sample maximum <span class="math notranslate nohighlight">\(T_2\)</span> puts a lot of mass just to the left of the population maximum <span class="math notranslate nohighlight">\(300\)</span>.</p>
+<div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/2196cfa944560653778607962d9fa8b2199eaa5a0c28ad8d3c41ac5f319740f6.png" src="../../_images/2196cfa944560653778607962d9fa8b2199eaa5a0c28ad8d3c41ac5f319740f6.png" />
+</div>
+</div>
+<p>The blue histogram shows the empirical distribution of <span class="math notranslate nohighlight">\(T_1 = 2\bar{X} - 1\)</span>. It is roughly normal because the distribution of <span class="math notranslate nohighlight">\(\bar{X}\)</span> is roughly normal by the Central Limit Theorem.</p>
+<p>The blue histogram is centered at <span class="math notranslate nohighlight">\(N = 300\)</span>, the value of <span class="math notranslate nohighlight">\(N\)</span> that we chose for the simulation. That is because <span class="math notranslate nohighlight">\(T_1\)</span> is an unbiased estimator of <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<p>The gold histogram displays the distribution of <span class="math notranslate nohighlight">\(T_2 = \max\{1, 2, 3, \ldots, N\}\)</span>. It is entirely to the left of <span class="math notranslate nohighlight">\(N = 300\)</span>, confirming our assertion that <span class="math notranslate nohighlight">\(T_2\)</span> underestimates <span class="math notranslate nohighlight">\(N\)</span>. However, the gold histogram is quite a bit narrower than the blue and puts most of its probability very close to the parameter <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<p>This is a situation in which we might prefer to use the somewhat biased estimator <span class="math notranslate nohighlight">\(T_2\)</span> over the unbiased but widely variable estimator <span class="math notranslate nohighlight">\(T_1\)</span>. If both the bias and the variance of an estimator are small, then the mean squared error of the estimator will be small. If the bias is zero but the variance is large then the mean squared error will be large.</p>
+</section>
+<section id="calculating-mean-squared-error">
+<h2><span class="section-number">11.2.2. </span>Calculating Mean Squared Error<a class="headerlink" href="#calculating-mean-squared-error" title="Link to this heading">#</a></h2>
+<p>For a parameter <span class="math notranslate nohighlight">\(\theta &gt; 0\)</span>, let <span class="math notranslate nohighlight">\(X\)</span> have the density given by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f_\theta(x) ~ = ~ 
+\begin{cases}
+\frac{2}{\theta^2}(\theta - x) &amp; \text{for } 0 &lt; x &lt; \theta \\
+0 &amp; \text{otherwise}
+\end{cases}
+\end{split}\]</div>
+<p>The graph of the density is shown below. Check that you agree with the values of <span class="math notranslate nohighlight">\(f_\theta(x)\)</span> shown for <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(x = \theta/2\)</span>, and <span class="math notranslate nohighlight">\(x = \theta\)</span>.</p>
+<div class="cell tag_remove_input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/a8c33c5cdf10211268fe350dc150479e4d867c7c32c447a02a540a6683e70244.png" src="../../_images/a8c33c5cdf10211268fe350dc150479e4d867c7c32c447a02a540a6683e70244.png" />
+</div>
+</div>
+<p>Our goal is to estimate <span class="math notranslate nohighlight">\(\theta\)</span> based on <span class="math notranslate nohighlight">\(X\)</span>. Let’s try simply using <span class="math notranslate nohighlight">\(X\)</span> as our estimator, and find the mean squared error.</p>
+<p><strong>Bias:</strong> Since <span class="math notranslate nohighlight">\(X\)</span> is always less than <span class="math notranslate nohighlight">\(\theta\)</span>, we know that this estimator will underestimate <span class="math notranslate nohighlight">\(\theta\)</span> and thus have a negative bias. To find the value of the bias, we first need the expectation of <span class="math notranslate nohighlight">\(X\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_\theta(X) ~ &amp;= ~ \int_0^\theta x \cdot \frac{2}{\theta^2}(\theta - x)dx \\
+&amp;= ~ \frac{2}{\theta^2}\big{(} \int_0^\theta \theta xdx - \int_0^\theta x^2dx \big{)}\\
+&amp;= ~ \frac{2}{\theta^2}\big{(} \theta \cdot \frac{\theta^2}{2} - \frac{\theta^3}{3} \big{)}\\
+&amp;= ~ \theta - \frac{2}{3}\theta\\
+&amp;= ~ \frac{1}{3}\theta
+\end{align*}
+\end{split}\]</div>
+<p>The bias of <span class="math notranslate nohighlight">\(X\)</span> as an estimator of <span class="math notranslate nohighlight">\(\theta\)</span> is thus</p>
+<div class="math notranslate nohighlight">
+\[
+B_\theta(X) ~=~ E_\theta(X) - \theta ~=~ -\frac{2}{3}\theta.
+\]</div>
+<p>The calculation shows that the bias gets worse as <span class="math notranslate nohighlight">\(\theta\)</span> gets larger. This makes sense. We know that <span class="math notranslate nohighlight">\(X\)</span> has to be between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>. If <span class="math notranslate nohighlight">\(\theta\)</span> is small, <span class="math notranslate nohighlight">\(X\)</span> is sandwiched between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> without much wiggle room, and therefore can’t be very much less than <span class="math notranslate nohighlight">\(\theta\)</span>. The bigger <span class="math notranslate nohighlight">\(\theta\)</span> gets, the more room there is below <span class="math notranslate nohighlight">\(\theta\)</span>. Hence <span class="math notranslate nohighlight">\(X\)</span> can be further away from <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p><strong>Variance:</strong> To find the variance of <span class="math notranslate nohighlight">\(X\)</span>, we first need the expected square.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+E_\theta(X^2) ~ &amp;= ~ \int_0^\theta x^2 \cdot \frac{2}{\theta^2}(\theta - x)dx \\
+&amp;= ~ \frac{2}{\theta^2}\big{(} \int_0^\theta \theta x^2dx - \int_0^\theta x^3dx \big{)}\\
+&amp;= ~ \frac{2}{\theta^2}\big{(} \theta \cdot \frac{\theta^3}{3} - \frac{\theta^4}{4} \big{)}\\
+&amp;= ~ \frac{2}{3}\theta^2 - \frac{1}{2}\theta^2\\
+&amp;= ~ \frac{1}{6}\theta^2
+\end{align*}
+\end{split}\]</div>
+<p>The variance is</p>
+<div class="math notranslate nohighlight">
+\[
+Var_\theta(X) ~ = ~ \frac{1}{6}\theta^2 ~ - ~ \big{(} \frac{1}{3}\theta \big{)}^2 ~ = ~ \frac{1}{18} \theta^2
+\]</div>
+<p><strong>Mean Squared Error:</strong> We can now find the mean squared error of using <span class="math notranslate nohighlight">\(X\)</span> as an estimator of <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+MSE_\theta(X) ~ &amp;= ~ Var_\theta(X) + B_\theta^2(X) \\
+&amp;= ~ \frac{1}{18} \theta^2 + \big{(} -\frac{2}{3}\theta \big{)}^2 \\
+&amp;= ~ \frac{1}{18} \theta^2 + \frac{4}{9}\theta^2 \\
+&amp;= ~ \frac{1}{2}\theta^2
+\end{align*}
+\end{split}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(X\)</span> is a biased estimator of <span class="math notranslate nohighlight">\(\theta\)</span>, let’s see if we can construct an unbiased estimator of <span class="math notranslate nohighlight">\(\theta\)</span> and find its mean squared error. Then we can see whether one of the estimators is better than the other.</p>
+<p>We showed that <span class="math notranslate nohighlight">\(E_\theta(X) = \frac{1}{3}\theta\)</span>. Hence <span class="math notranslate nohighlight">\(3X\)</span> is an unbiased estimator of <span class="math notranslate nohighlight">\(\theta\)</span>. The mean squared error in using <span class="math notranslate nohighlight">\(3X\)</span> to estimate <span class="math notranslate nohighlight">\(\theta\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+MSE_\theta(3X) ~ &amp;= ~ Var_\theta(3X) + B_\theta^2(3X) \\
+&amp;= ~ 3^2Var(X) + 0^2 \\
+&amp;= ~ 9\cdot \frac{1}{18}\theta^2 \\
+&amp;= ~ \frac{1}{2} \theta^2
+\end{align*}
+\end{split}\]</div>
+<p>That is exactly the same mean squared error as the one we got when we used <span class="math notranslate nohighlight">\(X\)</span> as the estimator of <span class="math notranslate nohighlight">\(\theta\)</span>. The estimator <span class="math notranslate nohighlight">\(3X\)</span> eliminates the bias that we had when using <span class="math notranslate nohighlight">\(X\)</span>, but it has higher variance.</p>
+<p>Since the two estimators <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(3X\)</span> have the same mean squared error, which should you use if you want to estimate <span class="math notranslate nohighlight">\(\theta\)</span>? One factor to consider is that <span class="math notranslate nohighlight">\(3X\)</span> overestimates <span class="math notranslate nohighlight">\(\theta\)</span> if <span class="math notranslate nohighlight">\(X\)</span> is bigger than <span class="math notranslate nohighlight">\(\theta/3\)</span>, whereas <span class="math notranslate nohighlight">\(X\)</span> never overestimates <span class="math notranslate nohighlight">\(\theta\)</span>. If the possibility of overestimation is a problem, then <span class="math notranslate nohighlight">\(X\)</span> is the better choice. But if overestimation is not a problem then <span class="math notranslate nohighlight">\(3X\)</span> is a good choice since it is unbiased.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content/Chapter_11"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="01_Bias_and_Variance.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">11.1. </span>Bias and Variance</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="03_Least_Squares_Linear_Regression.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">11.3. </span>Least Squares Linear Regression</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-german-tank-problem-revisited">11.2.1. The German Tank Problem, Revisited</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculating-mean-squared-error">11.2.2. Calculating Mean Squared Error</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Ani Adhikari
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
